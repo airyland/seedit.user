@@ -23,10 +23,10 @@
 ### config.defaultAvatar   `config.defaultAvatar`
 获取默认头像
 ```
- {
-    small: 'http://uc.seedit.com/images/noavatar_small.gif',
-    middle: 'http://uc.seedit.com/images/noavatar_middle.gif',
-    big: 'http://uc.seedit.com/images/noavatar_big.gif'
+{
+    small: "http://scdn.bozhong.com/source/resource/img/noavatar_small.gif",
+    middle: "http://scdn.bozhong.com/source/resource/img/noavatar_middle.gif",
+    big: "http://scdn.bozhong.com/source/resource/img/noavatar_big.gif"
 }
 ```
 ### buildAvatar `buildAvatar(uid)`

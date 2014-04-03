@@ -11,5 +11,6 @@ seajs.use('seedit.user', function(user){
         console.log('fail',error);
       });
       console.log(user.buildAvatar('1158977'));
+      console.log(user.config.defaultAvatar);
 });
 ````
