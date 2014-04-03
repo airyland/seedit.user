@@ -26,9 +26,9 @@ define("moe/seedit.user/0.0.1/seedit.user-debug", [ "moe/API/0.0.3/API-debug" ],
         u = u.replace(/(\d{3})(\d{2})(\d{2})(\d{2})/, "$1/$2/$3/$4");
         var url = "http://uc.seedit.com/data/avatar/" + u + "_avatar_";
         return {
-            small: url + ".small.jpg",
-            middle: url + ".middle.jpg",
-            big: url + ".big.jpg"
+            small: url + "small.jpg",
+            middle: url + "middle.jpg",
+            big: url + "big.jpg"
         };
     };
     module.exports = {
