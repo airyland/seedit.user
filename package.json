@@ -1,0 +1,26 @@
+{
+  "family": "moe",
+  "name": "seedit.user",
+  "version": "0.0.1",
+  "description": "seedit user helper",
+  "homepage": "https://github.com/lizheng/seedit.user",
+  "author": "airyland",
+  "maintainers": [
+    "airyland"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lizheng/seedit.user.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [],
+  "licenses": "MIT",
+  "spm": {
+    "output": ["seedit.user.js"],
+    "alias": {},
+    "devAlias": {},
+    "engines": {}
+  }
+}
