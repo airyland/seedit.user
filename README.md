@@ -38,3 +38,15 @@
   big: "http://uc.seedit.com/data/avatar/001/15/89/77_avatar_big.jpg"
   }
 ```
+
+### login `login(username,password,sCallback,fCallback)`
+登录用户
+
+### logout `logout(sCallback,fCallback)`
+退出登录
+
+### setLastLoginInfo    `setLastLoginInfo(username,uid)`
+保存用户信息到本地
+
+### getLastLoginInfo    `getLastLoginInfo()`
+取得上次登录信息(如果用户未登录)

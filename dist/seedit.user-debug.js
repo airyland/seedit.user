@@ -1,4 +1,4 @@
-define("moe/seedit.user/0.0.1/seedit.user-debug", [ "moe/API/0.0.3/API-debug", "gallery/store/1.3.14/store-debug", "arale/events/1.1.0/events-debug" ], function(require, exports, module) {
+define("moe/seedit.user/0.0.2/seedit.user-debug", [ "moe/API/0.0.3/API-debug", "gallery/store/1.3.14/store-debug", "arale/events/1.1.0/events-debug" ], function(require, exports, module) {
     var User = {};
     var API = require("moe/API/0.0.3/API-debug");
     // 本地存储
