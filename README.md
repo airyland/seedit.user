@@ -14,8 +14,11 @@
 
 ### getUserInfo `getUserInfo(successCallback,failCallback)`
 获取用户信息
-`successCallback` 为成功回调
-`failCallback` 为失败回调，一般原因没有登录时的问题，或者服务端其他错误
+
+参数说明：
+
++ `successCallback` 成功回调
++ `failCallback` 失败回调，一般是因为没有登录，或者服务端其他错误
 
 ### config.defaultAvatar   `config.defaultAvatar`
 获取默认头像
@@ -30,8 +33,8 @@
 根据uid生成头像图片
 ```
  {
-  small: "http://uc.seedit.com/data/avatar/001/15/89/77_avatar_.small.jpg",
-  middle: "http://uc.seedit.com/data/avatar/001/15/89/77_avatar_.middle.jpg",
-  big: "http://uc.seedit.com/data/avatar/001/15/89/77_avatar_.big.jpg"
+  small: "http://uc.seedit.com/data/avatar/001/15/89/77_avatar_small.jpg",
+  middle: "http://uc.seedit.com/data/avatar/001/15/89/77_avatar_middle.jpg",
+  big: "http://uc.seedit.com/data/avatar/001/15/89/77_avatar_big.jpg"
   }
 ```
