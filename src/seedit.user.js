@@ -44,18 +44,20 @@ define(function (require, exports, module) {
     };
 
     // 退出登录
-    User.logout = function () {
-        API.del('bbs/auth_login', function () {
+    User.logout = function (successCallback, errorCallback) {
+        API.del('bbs/auth_login', function (data) {
             // 触发事件:成功退出登录
+            successCallback && successCallback(data);
             User.trigger('user_logout_success');
-        }, function () {
+        }, function (error) {
             // 触发事件:退出登录失败
+            errorCallback && errorCallback(error);
             User.trigger('user_logout_fail');
         });
     };
 
     // 登录
-    User.login = function (username, password,sCallback,fCallback) {
+    User.login = function (username, password, sCallback, fCallback) {
         API.post('ucenter/login', {
             username: username,
             password: password

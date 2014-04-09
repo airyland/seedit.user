@@ -1,4 +1,4 @@
-define("moe/seedit.user/0.0.2/seedit.user-debug", [ "moe/API/0.0.3/API-debug", "gallery/store/1.3.14/store-debug", "arale/events/1.1.0/events-debug" ], function(require, exports, module) {
+define("moe/seedit.user/0.0.3/seedit.user-debug", [ "moe/API/0.0.3/API-debug", "gallery/store/1.3.14/store-debug", "arale/events/1.1.0/events-debug" ], function(require, exports, module) {
     var User = {};
     var API = require("moe/API/0.0.3/API-debug");
     // 本地存储
@@ -38,12 +38,14 @@ define("moe/seedit.user/0.0.2/seedit.user-debug", [ "moe/API/0.0.3/API-debug", "
         });
     };
     // 退出登录
-    User.logout = function() {
-        API.del("bbs/auth_login", function() {
+    User.logout = function(successCallback, errorCallback) {
+        API.del("bbs/auth_login", function(data) {
             // 触发事件:成功退出登录
+            successCallback && successCallback(data);
             User.trigger("user_logout_success");
-        }, function() {
+        }, function(error) {
             // 触发事件:退出登录失败
+            errorCallback && errorCallback(error);
             User.trigger("user_logout_fail");
         });
     };
