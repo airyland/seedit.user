@@ -1,6 +1,6 @@
 define(function (require) {
     var expect = require('expect');
-    var User = require('seedit.user');
+    var User = require('seedit-user');
 
     describe('seedit.user', function () {
 

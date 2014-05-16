@@ -3,7 +3,7 @@
 ---
 
 ````javascript
-seajs.use('seedit.user', function(user){
+seajs.use('seedit-user', function(user){
       console.log(user.isLogin());
       user.getUserInfo(function(data){
         console.log(data);
