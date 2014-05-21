@@ -1,16 +1,15 @@
 {
-  "family": "moe",
   "name": "seedit-user",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "seedit user helper",
-  "homepage": "https://github.com/lizheng/seedit-user",
+  "homepage": "https://github.com/airyland/seedit-user",
   "author": "airyland",
   "maintainers": [
     "airyland"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/lizheng/seedit-user.git"
+    "url": "git://github.com/airyland/seedit-user.git"
   },
   "bugs": {
     "url": ""
@@ -18,9 +17,14 @@
   "keywords": [],
   "licenses": "MIT",
   "spm": {
-    "output": ["seedit-user.js"],
+    "main": "index.js",
     "alias": {},
     "devAlias": {},
-    "engines": {}
+    "engines": {},
+    "dependencies": {
+      "store": "1.3.16",
+      "events": "1.0.6",
+      "expect": "0.3.1"
+    }
   }
 }
