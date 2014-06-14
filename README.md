@@ -1,6 +1,10 @@
 # seedit.user
 
 ---
+
+[![Build Status](https://travis-ci.org/airyland/seedit.user.svg?branch=master)](https://travis-ci.org/airyland/seedit.user)
+[![Coverage Status](https://coveralls.io/repos/airyland/seedit.user/badge.png)](https://coveralls.io/r/airyland/seedit.user)
+
 网站通用用户模块
 ---
 
