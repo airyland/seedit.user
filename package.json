@@ -26,6 +26,9 @@
       "expect": "0.3.1",
       "seedit-api": "0.0.5",
       "eventor": "0.0.1"
+    },
+    "devDependencies": {
+      "seajs": "2.2.1"
     }
   }
 }
